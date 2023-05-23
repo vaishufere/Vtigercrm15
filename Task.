@@ -21,4 +21,8 @@
  </html>
  driver.manage().maximize();
   driver.manage().manimize();
+   driver.manage().fullScreeen();
+    driver.manage().getPosition();
+ 
+ 
  
