@@ -23,7 +23,6 @@
   driver.manage().manimize();
    driver.manage().fullScreeen();
     driver.manage().getPosition();
-    driver.manage().setPosition();
  
  
  
