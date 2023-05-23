@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation Property</title>
+	<style type="text/css">
+		.d1
+		{
+			height: 100px;
+			width: 100px;
+			background-color: cyan;
+			animation-name: demo;
+			position: relative;
+			animation-duration: 4s;
+			top: 30px;
+			left: 30px;
+			animation-iteration-count: infinite;
+	        animation-direction: alternate-reverse;
+	        margin-top: 30px;
+		}
+		@keyframes demo
+		{
+			0%
+			{
+				top: 30px;
+				right: 30px;
+			}
+			25%
+			{
+				bottom: 30px;
+				left: 520px;
+				border-radius: 50px;
+				background-color: pink;
+				transform: rotate(360deg);
+				animation-timing-function: linear;
+			}
+			50%
+			{
+				bottom: 520px;
+				right: 520px;
+				border-radius: 0px;
+				background-color: skyblue;
+				transform: rotate(-360deg);
+
+			}
+			75%
+			{
+				top: 520px;
+				left: 20px;
+				border-radius: 50px;
+				background-color: red;
+				transform: rotate(360deg);
+			}
+			100%
+			{
+				top: 20px;
+				right: 20px;
+				border-radius: 0px;
+				background-color: purple;
+				transform: rotate(-360deg);
+			}
+		}
+		.d2
+		{
+			height: 100px;
+			width: 100px;
+			background-color: blue;
+			animation-name:demo1;
+			position: relative;
+			animation-duration: 4s;
+			top: 30px;
+			left: 30px;
+			animation-iteration-count: infinite;
+	        animation-direction: alternate-reverse;
+		}
+		@keyframes demo1
+		{
+			0%
+			{
+				bottom: 30px;
+				left: 30px;
+			}
+			25%
+			{
+				top: 30px;
+				right: 520px;
+				border-radius: 50px;
+				background-color: red;
+				transform: rotate(-360deg);
+				animation-timing-function: linear;
+			}
+			50%
+			{
+				top: 520px;
+			    left: 520px;
+				border-radius: 0px;
+				background-color:cyan;
+				transform: rotate(360deg);
+
+			}
+			75%
+			{
+				bottom: 520px;
+				right: 20px;
+				border-radius: 50px;
+				background-color: yellow;
+				transform: rotate(-360deg);
+			}
+			100%
+			{
+				bottom: 20px;
+				left: 20px;
+				border-radius: 0px;
+				background-color: green;
+				transform: rotate(360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+      <div class="d1"></div>
+       <div class="d2"></div>
+</body>
+</html>
